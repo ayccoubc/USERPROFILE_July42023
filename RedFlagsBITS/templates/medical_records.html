@@ -1,0 +1,11 @@
+{% extends 'Base.html' %}
+
+{% block content %}
+    <h1>Medical Records</h1>
+    <form method="POST" action="/medical_records">
+        <label for="medical_problem">Medical Problem:</label>
+        <textarea id="medical_problem" name="medical_problem" required></textarea><br>
+
+        <input type="submit" value="Submit">
+    </form>
+{% endblock %}
